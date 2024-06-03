@@ -1,18 +1,22 @@
-import React from 'react'
+import React, { useContext }  from 'react'
+import ThemeContext from "../context/ThemeContext";
 import phone2 from '../assets/Frame 3.svg'
+import phone2d from '../assets/phone-1-d.svg'
 import star from '../assets/star-05.svg'
 import cube1 from '../assets/cube-02.svg'
 import cube2 from '../assets/cube-04.svg'
 import './features.css'
 import { motion } from 'framer-motion'
 
+
 const Features = () => {
+    const { currentTheme } = useContext(ThemeContext)
     return (
         <div className='flex flex-col-reverse justify-center items-center lg:w-[80%] lg:flex-row lg:justify-center lg:items-center'>
             <div className='lg:w-[40%] w-[80%] flex justify-end'>
                 <motion.img initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1 }} className='bg-transparent' src={phone2} alt="phone" />
+              transition={{ duration: 1 }} className='bg-transparent' src={currentTheme === "light" ? phone2 : phone2d} alt="phone" />
             </div>
             <motion.div initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}

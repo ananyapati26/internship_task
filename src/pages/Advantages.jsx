@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useContext }  from 'react'
+import ThemeContext from "../context/ThemeContext";
 import group2 from '../assets/Group2.svg'
 import frame4 from '../assets/Frame 4.svg'
 import frame8 from '../assets/Frame 8.svg'
+import phone3d from '../assets/phone-2-d.svg'
+import phone4d from '../assets/phone-3-d.svg'
 import group3 from '../assets/Group3.svg'
 import { motion } from 'framer-motion'
 
 const Advantages = () => {
+  const { currentTheme } = useContext(ThemeContext)
   return (
     <>
     <div  className=' lg:w-[70%] flex flex-col w-[100%] justify-center items-center lg:flex lg:flex-row lg:justify-center lg:items-center'>
@@ -34,7 +38,7 @@ const Advantages = () => {
         </motion.div>
         <div className='w-[80%] lg:w-[50%] '><motion.img initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1 }} src={frame4} alt='ok'/></div>
+              transition={{ duration: 1 }} src={currentTheme === "light" ? frame4 : phone3d} alt='ok'/></div>
     </div>
     <div  className='lg:w-[70%] flex flex-col w-[100%] justify-center items-center lg:flex lg:flex-row-reverse lg:justify-center lg:items-center'>
     <motion.div initial={{ opacity: 0, x: 100 }}
@@ -57,7 +61,7 @@ const Advantages = () => {
     </motion.div>
     <div className='w-[80%] lg:w-[50%]'><motion.img initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1 }} src={frame8} alt='ok'/></div>
+              transition={{ duration: 1 }} src={currentTheme === "light" ? frame8 : phone4d} alt='ok'/></div>
 </div>
 </>
   )
