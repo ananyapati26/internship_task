@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useContext }  from 'react'
+import ThemeContext from "../context/ThemeContext";
 import Frame6 from '../assets/Frame 6.svg'
 import Group4 from '../assets/Group4.svg'
 import { motion } from 'framer-motion'
+import ppl from '../assets/ppls.svg'
 
 const Testimonials = () => {
+    const { currentTheme } = useContext(ThemeContext)
     return (
         <>
             <div className='w-[80%] xl:w-[70%]'>
@@ -19,7 +22,7 @@ const Testimonials = () => {
                 <div className='flex-col-reverse justify-center items-center xl:flex xl:flex-row'>
                     <div className='w-[70%] ml-40 xl:w-[50%] xl:ml-0 '><motion.img initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1 }} src={Frame6} alt='ok' /></div>
+              transition={{ duration: 1 }} src={currentTheme === "light" ? Frame6 : ppl} alt='ok' /></div>
                     
                     <motion.div initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
