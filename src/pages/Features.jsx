@@ -14,8 +14,9 @@ const Features = () => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1 }} className='bg-transparent' src={phone2} alt="phone" />
             </div>
-            <motion.div  initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 1, x: 0 }} className='lg:w-[60%] flex flex-col lg:justify-center w-[80%]'>
+            <motion.div initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }} className='lg:w-[60%] flex flex-col lg:justify-center w-[80%]'>
                 <div className="flex flex-col items-center lg:items-start ">
                     <p className="text-primary font-medium text-2xl items-center lg:items-start">Features</p>
                     <p className="text-6xl font-bold items-start mb-10">Uifry Premium</p>
