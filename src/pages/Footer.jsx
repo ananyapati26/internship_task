@@ -2,11 +2,14 @@ import React from 'react'
 import Logo from '../assets/logo.svg'
 import Mail from '../assets/mailicon.svg'
 import Phone from '../assets/phoneicon.svg'
+import { motion } from 'framer-motion'
 
 const Footer = () => {
   return (
     <div>
-         <div className="relative overflow-hidden py-10">
+         <motion.div initial={{ y: 100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}  
+      transition={{ duration: 1 }}  className="relative overflow-hidden py-10">
         <div className="w-11/12 max-w-[1090px] relative mx-auto px-4 md:px-0">
             <div className="w-full flex justify-normal lg:justify-between flex-wrap">
                 <div className="w-full p-6 lg:p-0 md:w-1/2 lg:w-2/12">
@@ -67,7 +70,7 @@ const Footer = () => {
                 </div>
             </div>
         </div>
-    </div>
+    </motion.div>
     </div>
   )
 }
