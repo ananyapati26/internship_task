@@ -1,6 +1,7 @@
 import React from 'react'
 import Frame6 from '../assets/Frame 6.svg'
 import Group4 from '../assets/Group4.svg'
+import { motion } from 'framer-motion'
 
 const Testimonials = () => {
     return (
@@ -16,9 +17,13 @@ const Testimonials = () => {
                     </h4></div>
                 </div>
                 <div className='flex-col-reverse justify-center items-center xl:flex xl:flex-row'>
-                    <div className='w-[70%] ml-40 xl:w-[50%] xl:ml-0 '><img src={Frame6} alt='ok' /></div>
+                    <div className='w-[70%] ml-40 xl:w-[50%] xl:ml-0 '><motion.img initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1 }} src={Frame6} alt='ok' /></div>
                     
-                    <div className='flex flex-col pl-8 pr-5 xl:w-[50%] xl:p-0 justify-center items-start gap-4'>
+                    <motion.div initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }} className='flex flex-col pl-8 pr-5 xl:w-[50%] xl:p-0 justify-center items-start gap-4'>
                     <h5 className='text-[28px] font-[600] leading-[1] capitalize xl:text-[24px]'>
                         The best financial accounting app ever!
                     </h5>
@@ -31,7 +36,7 @@ const Testimonials = () => {
                     </p>
                     <img src={Group4} alt='avatars' width={192} />
                     <span className='text-[18px] font-[600]'>Nick Jonas</span>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </>
