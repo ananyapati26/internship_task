@@ -4,15 +4,18 @@ import star from '../assets/star-05.svg'
 import cube1 from '../assets/cube-02.svg'
 import cube2 from '../assets/cube-04.svg'
 import './features.css'
-
+import { motion } from 'framer-motion'
 
 const Features = () => {
     return (
         <div className='flex flex-col-reverse justify-center items-center lg:w-[80%] lg:flex-row lg:justify-center lg:items-center'>
             <div className='lg:w-[40%] w-[80%] flex justify-end'>
-                <img className='bg-transparent' src={phone2} alt="phone" />
+                <motion.img initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1 }} className='bg-transparent' src={phone2} alt="phone" />
             </div>
-            <div className='lg:w-[60%] flex flex-col lg:justify-center w-[80%]'>
+            <motion.div  initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }} className='lg:w-[60%] flex flex-col lg:justify-center w-[80%]'>
                 <div className="flex flex-col items-center lg:items-start ">
                     <p className="text-primary font-medium text-2xl items-center lg:items-start">Features</p>
                     <p className="text-6xl font-bold items-start mb-10">Uifry Premium</p>
@@ -47,7 +50,7 @@ const Features = () => {
                     </div>
 
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 }
