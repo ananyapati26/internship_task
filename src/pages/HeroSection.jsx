@@ -4,12 +4,15 @@ import arrow from "../assets/white-arrow-right.svg";
 import banner from "../assets/banner.svg";
 import frame9 from "../assets/Frame 9.svg";
 import Button from "../components/Button/Button";
+import { motion } from 'framer-motion';
 
 const HeroSection = () => {
   return (
     <>
       <div className="w-[80%] xl:w-[70%] flex flex-col md:flex xl:flex-row mt-10  ">
-        <div className="xl:w-[60%] flex flex-col gap-8 ">
+        <motion.div  initial={{ opacity: 0, x: 0 }}
+              animate={{ opacity: 1, x: 90 }}
+              transition={{ duration: 1 }}  className="xl:w-[60%] flex flex-col gap-8 ">
           <div>
             <h1 className="md:text-[64px] leading-[1] font-[800] text-[40px] 2xl:text-[48px] xl:text-[36px]">
               Make The Best Financial Decisions
@@ -35,9 +38,11 @@ const HeroSection = () => {
           <div>
             <img src={banner} alt="ok" />
           </div>
-        </div>
+        </motion.div>
         <div className="xl:w-[50%]">
-          <img src={frame9} alt="ok" />
+          <motion.img initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }} src={frame9} alt="ok" />
         </div>
       </div>
     </>
