@@ -1,15 +1,18 @@
-import React from "react";
+import React, { useContext }  from 'react'
+import ThemeContext from "../context/ThemeContext";
 import play from "../assets/play-video-icon.svg";
 import arrow from "../assets/white-arrow-right.svg";
 import banner from "../assets/banner.svg";
 import frame9 from "../assets/Frame 9.svg";
 import Button from "../components/Button/Button";
+import phones from '../assets/phones-d.svg'
 import { motion } from 'framer-motion';
 
 const HeroSection = () => {
+  const { currentTheme } = useContext(ThemeContext)
   return (
     <>
-      <div className="w-[80%] xl:w-[70%] flex flex-col md:flex xl:flex-row mt-10  ">
+      <div className="w-[80%] xl:w-[80%] flex flex-col md:flex xl:flex-row mt-10  ">
         <motion.div  initial={{ opacity: 0, x: 0 }}
               animate={{ opacity: 1, x: 90 }}
               transition={{ duration: 1 }}  className="xl:w-[60%] flex flex-col gap-8 ">
@@ -42,7 +45,7 @@ const HeroSection = () => {
         <div className="xl:w-[50%]">
           <motion.img initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5 }} src={frame9} alt="ok" />
+              transition={{ duration: 0.5 }} src={currentTheme === "light" ? frame9 : phones} alt="ok" />
         </div>
       </div>
     </>
