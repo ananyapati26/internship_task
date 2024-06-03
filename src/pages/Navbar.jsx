@@ -6,6 +6,7 @@ import { TiThMenu } from "react-icons/ti";
 import { RiCloseLargeFill } from "react-icons/ri";
 import Button from '../components/Button/Button'
 import ThemeContext from "../context/ThemeContext";
+import logod from '../assets/logo-dark.svg';
 
 
 const navItems = [
@@ -24,7 +25,7 @@ const Navbar = () => {
         <div className="w-full h-[60px] flex justify-between items-center my-[40px]">
           <div className="flex items-center gap-[20px] lg:gap-[40px]">
             <div>
-              <img src={currentTheme === "light" ? logo : "ok"} alt="Logo" width="117px" />
+              <img src={currentTheme === "light" ? logo : logod} alt="Logo" width="117px" />
             </div>
             <div className="hidden md:flex items-center gap-[24px] font-bold text-[20px]">
               {navItems.map((item, index) => (
