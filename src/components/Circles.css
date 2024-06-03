@@ -1,0 +1,24 @@
+.circles{
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid blue;
+    display: flex;
+    column-gap: 1px;
+}
+.circle{
+    height: 350px;
+    width: 520px;
+    border-radius: 50%;
+    border: 2px solid rgb(0, 0, 0);
+    transform: rotate(50deg);
+}
+.circle-2{
+    position: relative;
+    left: -490px;
+    top: -30px;
+}
+.circle-3{
+    position: relative;
+    left: -970px;
+    top: -60px;
+}
