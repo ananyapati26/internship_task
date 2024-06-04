@@ -13,7 +13,7 @@ const HeroSection = () => {
   const { currentTheme } = useContext(ThemeContext)
   return (
     <>
-      <div className=" w-[100%] xl:w-[80%] flex flex-col md:flex xl:flex-row mt-10  ">
+      <div className=" w-[90%] xl:w-[80%] flex flex-col md:flex xl:flex-row mt-10  ">
         <motion.div  initial={{ opacity: 0, x: 0 }}
               animate={{ opacity: 1, x: 3 }}
               transition={{ duration: 1 }}  className="w-[100%] xl:w-[60%] flex flex-col gap-8 ">
