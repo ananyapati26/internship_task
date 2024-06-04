@@ -14,7 +14,7 @@ const Advantages = () => {
     <>
     <div  className=' lg:w-[70%] flex flex-col w-[100%] justify-center items-center lg:flex lg:flex-row lg:justify-center lg:items-center'>
         <motion.div initial={{ opacity: 0, x: 0 }}
-          animate={{ opacity: 1, x: 90 }}
+          animate={{ opacity: 1, x: 10 }}
           transition={{ duration: 1 }} className='lg:w-[50%] flex flex-col justify-center pl-20 pr-20 xl:pr-0'>
             <div><h3 className='text-[18px] tracking-[1.6px] text-[#FF5555] mb-[4px] xl:text-[16px]'>
               ADVANTAGES

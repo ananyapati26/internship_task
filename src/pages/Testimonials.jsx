@@ -20,7 +20,7 @@ const Testimonials = () => {
                     </h4></div>
                 </div>
                 <div className='flex-col-reverse justify-center items-center xl:flex xl:flex-row'>
-                    <div className='w-[70%] ml-40 xl:w-[50%] xl:ml-0 '><motion.img initial={{ opacity: 0, scale: 0.5 }}
+                    <div className='w-[70%] ml-37 xl:w-[50%] xl:ml-0 '><motion.img initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1 }} src={currentTheme === "light" ? Frame6 : ppl} alt='ok' /></div>
                     

@@ -7,14 +7,15 @@ import frame9 from "../assets/Frame 9.svg";
 import Button from "../components/Button/Button";
 import phones from '../assets/phones-d.svg'
 import { motion } from 'framer-motion';
+import playd from '../assets/play-d.svg'
 
 const HeroSection = () => {
   const { currentTheme } = useContext(ThemeContext)
   return (
     <>
-      <div className="w-[100%] xl:w-[100%] flex flex-col md:flex xl:flex-row mt-10  ">
+      <div className=" w-[100%] xl:w-[80%] flex flex-col md:flex xl:flex-row mt-10  ">
         <motion.div  initial={{ opacity: 0, x: 0 }}
-              animate={{ opacity: 1, x: 10 }}
+              animate={{ opacity: 1, x: 3 }}
               transition={{ duration: 1 }}  className="w-[100%] xl:w-[60%] flex flex-col gap-8 ">
           <div>
             <h1 className="md:text-[64px] leading-[1] font-[800] text-[40px] 2xl:text-[48px] xl:text-[36px]">
@@ -33,13 +34,13 @@ const HeroSection = () => {
             </div>
             <div>
               <button className="flex items-center gap-[14px] pt-4">
-                <img src={play} alt="play" />
+                <img src={currentTheme === "light" ? play : playd} alt="play" />
                 <span>Watch Video</span>
               </button>
             </div>
           </div>
           <div>
-            <img src={banner} alt="ok" />
+            <img className='w-[80%] xl:w-[70%] ' src={banner} alt="ok" />
           </div>
         </motion.div>
         <div className="xl:w-[50%]">
