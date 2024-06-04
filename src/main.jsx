@@ -7,7 +7,7 @@ import ThemeContextWrapper from './context/ThemeContextWrapper .jsx'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeContextWrapper>
-    <div className=" bg-white text-black dark:bg-black dark:text-zinc-200 transition duration-300">
+    <div className="w-[100vw] bg-white text-black dark:bg-black dark:text-zinc-200 transition duration-300">
     <App />
     </div>
     </ThemeContextWrapper>

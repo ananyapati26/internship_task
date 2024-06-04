@@ -6,7 +6,7 @@ const Faq = () => {
     <>
      <motion.div initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}  
-      transition={{ duration: 1 }}  className="xl:w-[100%] mx-auto mt-14">
+      transition={{ duration: 1 }}  className="w-[100%] xl:w-[100%] mx-auto mt-14">
         <div className="pl-20 max-w-[497px] flex flex-col gap-1">
           <div className="text-[18px] text-[#FF5555] leading-[28px] font-medium">FAQ</div>
           <div className=" text-[48px] leading-[48px] font-bold">Frequently Asked Questions</div>
