@@ -13,7 +13,7 @@ const Faq = () => {
         </div>
         <div className=" w-full flex flex-col md:flex md:flex-row justify-center gap-5 my-10">
           <div className="w-full flex flex-col justify-center items-center gap-7">
-            <div className="w-full max-w-[534px] px-[34px] flex flex-col justify-center items-center gap-2 rounded-md bg-[#FF5555] text-white">
+            <div className="w-full max-w-[534px] p-[34px] flex flex-col justify-center items-center gap-2 rounded-md bg-[#FF5555] text-white">
               <div className="text-[28px] leading-[28px] font-semibold capitalize">
                 the best financial accounting app ever!
               </div>
@@ -22,7 +22,7 @@ const Faq = () => {
               </div>
             </div>
 
-            <div className="w-full max-w-[534px] px-[34px] flex flex-col justify-center items-center gap-2 rounded-md">
+            <div className="w-full max-w-[534px] p-[34px] flex flex-col justify-center items-center gap-2 rounded-md">
               <div className="text-[28px] leading-[28px] font-semibold capitalize">
                 the best financial accounting app ever!
               </div>
@@ -31,7 +31,7 @@ const Faq = () => {
               </div>
             </div>
 
-            <div className="w-full max-w-[534px] px-[34px] flex flex-col justify-center items-center gap-2 rounded-md bg-[#FF5555] text-white">
+            <div className="w-full max-w-[534px] p-[34px] flex flex-col justify-center items-center gap-2 rounded-md bg-[#FF5555] text-white">
               <div className="text-[28px] leading-[28px] font-semibold capitalize">
                 the best financial accounting app ever!
               </div>
@@ -42,7 +42,7 @@ const Faq = () => {
           </div>
 
           <div className="w-full max-w-[534px] flex flex-col justify-center items-center gap-7">
-            <div className="w-full max-w-[534px]  px-[34px] flex flex-col justify-center items-center gap-2 rounded-md">
+            <div className="w-full max-w-[534px]  p-[34px] flex flex-col justify-center items-center gap-2 rounded-md">
               <div className="text-[28px] leading-[28px] font-semibold capitalize">
                 the best financial accounting app ever!
               </div>
@@ -51,7 +51,7 @@ const Faq = () => {
               </div>
             </div>
 
-            <div className="w-full max-w-[534px]  px-[34px] flex flex-col justify-center items-center gap-2 rounded-md bg-[#FF5555] text-white">
+            <div className="w-full max-w-[534px]  p-[34px] flex flex-col justify-center items-center gap-2 rounded-md bg-[#FF5555] text-white">
               <div className="text-[28px] leading-[28px] font-semibold capitalize">
                 the best financial accounting app ever!
               </div>
@@ -60,7 +60,7 @@ const Faq = () => {
               </div>
             </div>
 
-            <div className="w-full max-w-[534px] px-[34px] flex flex-col justify-center items-center gap-2 rounded-md">
+            <div className="w-full max-w-[534px] p-[34px] flex flex-col justify-center items-center gap-2 rounded-md">
               <div className="text-[28px] leading-[28px] font-semibold capitalize">
                 the best financial accounting app ever!
               </div>
